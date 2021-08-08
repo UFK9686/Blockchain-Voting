@@ -83,6 +83,6 @@ contract PresidentialElection {
         return candidateDescMap[candidate];
     }
 
-    event OnVote(address indexed _from, uint _value);
-    event OnStatusChange(bool newIsOpen);
+    event OnVote(address indexed _from, uint _value);           //we want to register and keep track of the votes and the address of message sender
+    event OnStatusChange(bool newIsOpen);               // we want to keep track of the status of the election 
 }
