@@ -29,7 +29,7 @@ contract PresidentialElection {
         require(isOpen == true, "Election is closed");
         ballotOf_[msg.sender] = candidate;      // show who the address interacting with the contract voted for (candidate 1-4)
         voteCounts[candidate] = voteCounts[candidate].add(1);      // adding the vote of message sender to election total
-        emit OnVote(msg.sender, candidate); // send message to voter
+        emit OnVote(msg.sender, candidate); // logs the message sender's vote onto the blockchain via event
         return true;
     }
 
