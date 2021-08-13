@@ -2,6 +2,10 @@ pragma solidity ^0.6.0;
 
 
 // contract is designed from EIP-1202 voting standard at https://eips.ethereum.org/EIPS/eip-1202
+// Internal functions state variables can only be accessed internally (i.e. from within the current contract or contracts deriving from it), without using this.
+
+// Private functions Private functions and state variables are only visible for the contract they are defined in and not in derived contracts.
+
 
 import "@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol";
 
