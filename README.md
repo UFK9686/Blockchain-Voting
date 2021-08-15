@@ -15,6 +15,11 @@ In this project, we created a Solidity voting contract called `PresidentialElect
 
 ![Screenshot (33)](https://user-images.githubusercontent.com/78872373/129481372-b9b8ad37-ec54-454c-99b7-311bff5d2d6d.png)
 
+Despite the security concerns of using blockchain technology for something as powerful as a presidential election, a developer must first act as the first line of defense. As evident by the infamous Ethereum DAO hack in 2016, an error or vulnerability in code can lead to catastrophic loss. As a result, we tested our smart contract ballot using MythX smart contract scanner for vulnerabilities. We were pleased with the results, just four minor warnings three of which were related to variable declaration/ structure and one relating to compiler version of solidity. None of warnings would compromise the integrity of the election results, so we are confident in the functionality and security of our smart contract ballot. Please see MythX.pdf for detailed scan results.
+
+![mythX](https://user-images.githubusercontent.com/78872373/129481712-c22635c3-8826-427b-96ab-22856cca018a.jpg)
+
+
 Our contract assumes software independence and operates in a theoretical world. However, we know there are some issues in the real world that need addressing. Voting via blockchain has its pitfalls. While theoretically large-scale voting via blockchain could revolutionize the way our world works, there are too many weak spots within this system to fully implement blockchain voting safely. Elections, specifically national elections like the one we experienced last year, are huge targets for corruption and foul play.
 
 Security questions abound concerning blockchain voting. A technologically unsophisticated voter, of which there are many, could easily be manipulated by a savvy hacker. The same security protocols that protect online banking and shopping can’t and won’t easily translate to blockchain voting. These security systems fail, and fail often. However, banking systems and online shopping are used to absorbing this risk and loss because it is in their best interest. Who absorbs the failure and loss if there is election fraud? The people. The stakes are much larger. 
