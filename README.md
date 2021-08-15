@@ -7,7 +7,12 @@ Undisputable Election Results via Blockchain
   
   ![donald-trump-melania-trump-election-day](https://user-images.githubusercontent.com/78872373/129480814-823d5281-0fe2-462c-8600-de328d850f23.jpg)
 
-In this project, we created a Solidity voting contract called `PresidentialElection` allowing the voter to anonomously vote for their choice in a theoretical presidential election. The contract is controlled and deployed by one account, known as the ballot administrator. We've created functions that allow the voter to only vote once for their choice of candidate, and vote anonomously. The vote is then recorded anonymously on the Ethereum blockchain via `event OnVote`.
+In this project, we created a Solidity voting contract called `PresidentialElection` allowing the voter to anonomously vote for their choice in a theoretical presidential election. The contract is controlled and deployed by one account, known as the ballot administrator. We've created functions that allow the voter to only vote once for their choice of candidate, and vote anonomously. The vote is then recorded anonymously on the Ethereum blockchain via `event OnVote`. Our contract only allows the anon voter to vote once. 
+
+![Screenshot (32)](https://user-images.githubusercontent.com/78872373/129481213-e09c1d1a-058d-4809-b66a-f6cb7d4bf393.png)
+
+
+
   
   
 
